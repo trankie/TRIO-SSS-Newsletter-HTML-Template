@@ -1,0 +1,47 @@
+#contentContainer{
+    width: 600px;
+    border-collapse: collapse;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+#initHeader{
+    background-color: #e8680d;
+    color: white;
+    height: 30px;
+    padding-top:15px;
+    padding-left:10px;
+}
+#mainBanner{
+    width:100%;
+}
+.center{
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.date-input-field{
+    width: 100%;
+    font-family: arial,helvetica neue,helvetica,sans-serif;
+    font-weight: bold;
+    color: #DC4405;
+    font-size: 34px;
+    text-align: center;
+    word-break: break-word;
+    line-height: 100%;
+    border: none;
+    overflow: none;
+}
+hr.style-eight {
+    height: 5px;
+    border: 1;
+    box-shadow: inset 9px 9px 9px 9px rgba(21, 33, 44, 0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    width:95%;
+    margin: auto;
+    }
