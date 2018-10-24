@@ -21,11 +21,13 @@
     margin-top: -5px;
     margin-bottom: -5px;
 }
+
+/*Controls font of headers and body*/
 .date-input-field{
     width: 100%;
     font-family: arial,helvetica neue,helvetica,sans-serif;
     font-weight: bold;
-    color: #DC4405;
+    color: #D73F09;
     font-size: 34px;
     text-align: center;
     word-break: break-word;
@@ -33,6 +35,16 @@
     border: none;
     overflow: none;
 }
+.headerFont{
+    font-family: verdana, geneva, sans-serif;
+    color: #D73F09;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: 700;
+}
+
 hr.style-eight {
     height: 5px;
     border: 1;
@@ -100,7 +112,25 @@ hr.style-eight {
     background-repeat: no-repeat;
     background-position: top;
 }
-
+.buttonSocial{
+    padding: 0px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    background-color: white;
+    margin: 10px;
+}
+.button5{
+    background-image: url("../img/facebook-96.png");
+}
+.button6{
+    background-image: url("../img/website-link-96.png");
+}
+.button7{
+    background-image: url("../img/email-96.png");
+}
 button:hover{
     background-color:rgba(128, 128, 128, 0.329);
 }
