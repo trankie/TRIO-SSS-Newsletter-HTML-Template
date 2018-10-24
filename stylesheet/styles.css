@@ -45,3 +45,104 @@ hr.style-eight {
     width:95%;
     margin: auto;
     }
+
+
+/*Controller for buttons*/
+.button {
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.507);
+    width:100%;
+}
+.button1 {
+    background-color: white;
+    border: 2px solid #e7e7e7;
+    border-left: none;
+    border-right: none;
+}
+.button2{
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #e7e7e7;
+    margin-right: 15px;
+    background-image: url("../img/event_template_img_left.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.button3{
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #e7e7e7;
+    margin-right: 15px;
+    background-image: url("../img/event_template_just_text.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.button4{
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #e7e7e7;
+    background-image: url("../img/event_template_img_right.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+button:hover{
+    background-color:rgba(128, 128, 128, 0.329);
+}
+
+/*Pop-Up css*/
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
