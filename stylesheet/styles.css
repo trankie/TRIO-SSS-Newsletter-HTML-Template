@@ -131,6 +131,30 @@ hr.style-eight {
 .button7{
     background-image: url("../img/email-96.png");
 }
+.buttonManipulate{
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+.buttonCheck{
+    background-image: url("../img/checkmark.png");
+}
+.buttonDelete{
+    background-image: url("../img/xmark.png");
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    margin: 0px;
+}
+.buttonDelete:hover{
+    background-image: url("../img/xmarkHover.png");
+}
+.buttonCheck:hover{
+    background-image: url("../img/checkmarkHover.png");
+}
 button:hover{
     background-color:rgba(128, 128, 128, 0.329);
 }
@@ -155,7 +179,7 @@ button:hover{
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 50%;
+    width: 640px;
     border-radius: 0.5rem;
 }
 .close-button {
@@ -175,4 +199,24 @@ button:hover{
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.inputUE{
+    text-align: center;
+}
+
+/* Word wrap inside of TD*/
+.wrapword{
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap; /*Chrome & Safari */ 
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
+
+tr[class^="UpERow"]:hover{
+    background-color: rgba(151, 151, 148, 0.719);
 }
