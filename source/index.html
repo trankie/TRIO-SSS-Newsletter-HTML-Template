@@ -47,6 +47,28 @@
                             <button class="center button button1 trigger" type="button">Click To Add Event</button>
                         </td>
                     </tr>
+                    <tr id="upcomingEvent">
+                        <table id="upcomingEventTable" style="width: 100%">
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <table id="upcomingEventTableController" style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <div class='headerFont'>TRIO Upcoming Events</div>
+                                    <td><input class="inputUE" type="text" id="upcomingEvent_Name" placeholder="Name of Upcoming Event"></td>
+                                    <td><input class="inputUE" type="text" id="upcomingEvent_Link" placeholder="Links/More Info (Optional)"></td>
+                                    <td><input class="inputUE" type="text" id="upcomingEvent_Date_Time_Location" placeholder="Date/ Location/ Time"></td>
+                                    <td><input type="button" class="button buttonManipulate buttonCheck" onclick="addUpcomingEvent()"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <tr>
+                            <td>
+                                <hr class="style-eight" />
+                            </td>
+                        </tr>
+                    </tr>
                     <tr id="socialMedia">
                         <td align="center">
                             <div class="headerFont">Follow Us On Social Media</div>
@@ -76,5 +98,6 @@
 </div>
   <script src="../script/modal.js"></script>
   <script src="../script/content.js"></script>
+  <script src="../script/upcomingContent.js"></script>
 </body>
 </html>
