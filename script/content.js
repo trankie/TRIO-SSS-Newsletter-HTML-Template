@@ -2,23 +2,23 @@ var numRow = 0;
 function delete_entryRowOption2(no)
 {
  document.getElementById("entryRowHeader"+no+"").outerHTML="";
- document.getElementById("header"+no+"").outerHTML="";
- document.getElementById("entryRowBody"+no+"").outerHTML="";
- document.getElementById("entryDelete"+no+"").outerHTML="";
- document.getElementById("entryRowHR"+no+"").outerHTML="";
+ //document.getElementById("header"+no+"").outerHTML="";
+ //document.getElementById("entryRowBody"+no+"").outerHTML="";
+ //document.getElementById("entryDelete"+no+"").outerHTML="";
+ //document.getElementById("entryRowHR"+no+"").outerHTML="";
 }
 
 function delete_entryRowOption1(no)
 {
  document.getElementById("entryRowHeader"+no+"").outerHTML="";
- document.getElementById("header"+no+"").outerHTML="";
- document.getElementById("entryRowBody"+no+"").outerHTML="";
- document.getElementById("entryDelete"+no+"").outerHTML="";
- document.getElementById("entryRowHR"+no+"").outerHTML="";
- document.getElementById("breakLine"+no+"").outerHTML="";
- document.getElementById("uploadImage"+no+"").outerHTML="";
- document.getElementById("file-upload"+no+"").outerHTML="";
- document.getElementById("label"+no+"").outerHTML="";
+ //document.getElementById("header"+no+"").outerHTML="";
+ //document.getElementById("entryRowBody"+no+"").outerHTML="";
+ //document.getElementById("entryDelete"+no+"").outerHTML="";
+ //document.getElementById("entryRowHR"+no+"").outerHTML="";
+ //document.getElementById("breakLine"+no+"").outerHTML="";
+ //document.getElementById("uploadImage"+no+"").outerHTML="";
+ //document.getElementById("file-upload"+no+"").outerHTML="";
+ //document.getElementById("label"+no+"").outerHTML="";
 }
 
 function addTemplate2() {
