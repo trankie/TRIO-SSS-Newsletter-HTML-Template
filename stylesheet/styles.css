@@ -35,7 +35,7 @@
     border: none;
     overflow: none;
 }
-.headerFont, .headerFontLeft{
+.headerFont{
     font-family: verdana, geneva, sans-serif;
     color: #D73F09;
     font-size: 15px;
@@ -44,10 +44,7 @@
     text-align: center;
     font-weight: 700;
 }
-.headerFontLeft{
-    text-align: left;
-    border-style: none;
-}
+
 /*Horizontal line style */
 hr.style-eight, hr.style-seven {
     height: 5px;
@@ -241,3 +238,32 @@ tr[class^="UpERow"]:hover{
 [contentEditable=true]:empty:before{
     content:attr(data-text)
 }
+
+input[type="file"] {
+    display: none;
+}
+.imageContainer {
+    /* border: 1px solid #ccc; */
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 250px;
+    height:auto;
+    margin-right: 10px;
+}
+.cloud-upload{
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/uploadFile.png");
+    background-size: cover;
+}
+.option1{
+    width: 285px;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
