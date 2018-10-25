@@ -1,27 +1,15 @@
-function addContent() {
-    var tbl1 = document.createElement("table");
-    tbl1.style.width = '100%';
-    tbl1.style.tableLayout = "fixed";
-    tbl1.setAttribute('border', '1');
-    var tbdy1 = document.createElement('tbody');
-    var tr1 = document.createElement('tr');
+var numRow = 0;
+function delete_entryRowOption2(no)
+{
+ document.getElementById("entryRowHeader"+no+"").outerHTML="";
+ document.getElementById("header"+no+"").outerHTML="";
+ document.getElementById("entryRowBody"+no+"").outerHTML="";
+ document.getElementById("entryDelete"+no+"").outerHTML="";
+ document.getElementById("entryRowHR"+no+"").outerHTML="";
+}
 
-    //Picture
-    var td1 = document.createElement('td');
-    td1.style.width = '250px';
-    td1.style.height = '250px';
-
-    //Content
-    var td2 = document.createElement('td');
-    td2.setAttribute("id", "edit");
-    td2.setAttribute("contenteditable", "true");
-    td2.setAttribute("valign", "top");
-    td2.setAttribute("overflow", "hidden");
-
-    tr1.appendChild(td1);
-    tr1.appendChild(td2);
-    tbdy1.appendChild(tr1);
-    tbl1.appendChild(tbdy1);
-
-    document.getElementById("beginBody").appendChild(tbl1);
+function addTemplate2() {
+    var table=document.getElementById("newEntryTable");
+    var row = table.insertRow(-1).outerHTML="<tr id='entryRowHeader"+numRow+"'><span id='header"+numRow+"' class='headerFontLeft' data-text='Insert Title' style='width:75%' contentEditable=true></span><input id='entryDelete"+numRow+"' type='button' class='delete button buttonManipulate buttonDelete' onclick='delete_entryRowOption2("+numRow+")' style='float:right'><div id='entryRowBody"+numRow+"' align='left' class='wrapword bodyText' contenteditable='true' data-text='Body Text'></div><hr id='entryRowHR"+numRow+"' class='style-seven' />";
+    numRow++;
 }

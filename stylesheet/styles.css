@@ -35,7 +35,7 @@
     border: none;
     overflow: none;
 }
-.headerFont{
+.headerFont, .headerFontLeft{
     font-family: verdana, geneva, sans-serif;
     color: #D73F09;
     font-size: 15px;
@@ -44,8 +44,12 @@
     text-align: center;
     font-weight: 700;
 }
-
-hr.style-eight {
+.headerFontLeft{
+    text-align: left;
+    border-style: none;
+}
+/*Horizontal line style */
+hr.style-eight, hr.style-seven {
     height: 5px;
     border: 1;
     box-shadow: inset 9px 9px 9px 9px rgba(21, 33, 44, 0.8);
@@ -56,7 +60,11 @@ hr.style-eight {
     border-radius: 5px;
     width:95%;
     margin: auto;
-    }
+}
+hr.style-seven {
+    box-shadow: inset 0px 0px 3px 0px rgba(21, 33, 44, 0.8);
+    border: .5px;
+}
 
 
 /*Controller for buttons*/
@@ -219,4 +227,17 @@ button:hover{
 
 tr[class^="UpERow"]:hover{
     background-color: rgba(151, 151, 148, 0.719);
+}
+
+.bodyText{
+    color: black;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    text-size-adjust: 100%;
+    vertical-align: top;
+    line-height: 21px;
+}
+[contentEditable=true]:empty:before{
+    content:attr(data-text)
 }
