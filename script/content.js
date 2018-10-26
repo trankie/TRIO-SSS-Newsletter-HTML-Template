@@ -27,8 +27,8 @@ function addTemplate3(){
     "<span id='header"+numRow+"' class='headerFont' data-text='Insert Title' style='width:75%' contentEditable=true></span>"+
     "<input id='entryDelete"+numRow+"' type='button' class='delete button buttonManipulate buttonDelete' onclick='delete_entryRowOption1("+numRow+")' style='float:right'>"+
     "<br id='breakLine"+numRow+"'>"+
-    "<div id='entryRowBody"+numRow+"' align='right' class='wrapword bodyText option1' contenteditable='true' style='margin-top: 3px;'>Body Text</div>"+
-    "<label id='label"+numRow+"'for='file-upload"+numRow+"' class='imageContainer'>"+
+    "<div id='entryRowBody"+numRow+"' align='right' class='wrapword bodyText option1' contenteditable='true'>Body Text</div>"+
+    "<label id='label"+numRow+"'for='file-upload"+numRow+"' class='imageContainerR'>"+
     "<img id='uploadImage"+numRow+"' src='' style='width: 250px;height: auto;' alt='Click To Upload Image\n (size 250xAny)'></label>"+
     "<input id='file-upload"+numRow+"' type='file' onchange='addPicture("+numRow+")'><hr id='entryRowHR"+numRow+"' class='style-seven' /></ul>";
     numRow++;

@@ -43,6 +43,7 @@
     letter-spacing: normal;
     text-align: center;
     font-weight: 700;
+    margin: 10px;
 }
 
 /*Horizontal line style */
@@ -234,6 +235,7 @@ tr[class^="UpERow"]:hover{
     text-size-adjust: 100%;
     vertical-align: top;
     line-height: 21px;
+    margin: 10px;
 }
 [contentEditable=true]:empty:before{
     content:attr(data-text)
@@ -242,14 +244,19 @@ tr[class^="UpERow"]:hover{
 input[type="file"] {
     display: none;
 }
-.imageContainer {
+.imageContainer, .imageContainerR{
     /* border: 1px solid #ccc; */
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
     width: 250px;
     height:auto;
-    margin-right: 10px;
+    margin: 10px;
+    margin-left: 0px;
+}
+.imageContainerR{
+    margin: 0px;
+    margin-top: 10px;
 }
 .cloud-upload{
     background-repeat: no-repeat;
@@ -259,7 +266,7 @@ input[type="file"] {
     background-size: cover;
 }
 .option1{
-    width: 285px;
+    width: 270px;
     display: inline-block;
 }
 ul {
