@@ -16,7 +16,7 @@
 </head>
 
 <body style="background-color: rgba(100, 99, 99, 0.534);">
-    <table style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px); background-color: white;">
+    <table id="originTable" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px); background-color: white;">
         <tbody>
             <tr>
                 <td>
@@ -32,7 +32,7 @@
                         <tr>
                             <td>
                                 <div id="date-input-container" class="center">
-                                    <input class="date-input-field" type="text" placeholder="Date (ex. Fall 2018 Week 5)"
+                                    <input id="date-input-field-ID" class="date-input-field" type="text" placeholder="Date (ex. Fall 2018 Week 5)"
                                         name="date">
                                 </div>
                             </td>
@@ -115,7 +115,7 @@
             </tr>
         </tbody>
     </table>
-    <div class="modal">
+    <div id="modal_ID" class="modal">
         <div class="modal-content">
             <span class="close-button">×</span>
             <h1 class="date-input-field">SELECT EVENT TEMPLATE:</h1><br>
@@ -124,9 +124,19 @@
             <button class="center button button4" type="button" onclick="addTemplate3()"></button>
         </div>
     </div>
+    <div id='publishContainer' display='none' style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px); background-color: white;">
+        <div class='contentContainer'>
+            <div id="initHeader" style="width:590px;">Oregon State University: TRIO</div>
+            <div style="width:100%;">
+                <img id="mainBanner" src="https://www.midmich.edu/application/files/5615/2882/9564/trio-sss-banner2.jpg">
+            </div>
+        </div>
+    </div>
+    <button id='publish_buttonID' type="button" class="button publish_button" onclick="savingCurrentValuesInTemplate()">Publish Page</button>
     <script src="../script/modal.js"></script>
     <script src="../script/content.js"></script>
     <script src="../script/upcomingContent.js"></script>
+    <script src="../script/templateControl.js"></script>
 </body>
 
 </html>

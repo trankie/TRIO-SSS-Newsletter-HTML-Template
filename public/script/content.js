@@ -1,31 +1,24 @@
 var numRow = 0;
+function delete_entryRowOption3(no)
+{
+ document.getElementById("Right"+no+"").outerHTML="";
+}
+
 function delete_entryRowOption2(no)
 {
- document.getElementById("entryRowHeader"+no+"").outerHTML="";
- //document.getElementById("header"+no+"").outerHTML="";
- //document.getElementById("entryRowBody"+no+"").outerHTML="";
- //document.getElementById("entryDelete"+no+"").outerHTML="";
- //document.getElementById("entryRowHR"+no+"").outerHTML="";
+ document.getElementById("Middle"+no+"").outerHTML="";
 }
 
 function delete_entryRowOption1(no)
 {
- document.getElementById("entryRowHeader"+no+"").outerHTML="";
- //document.getElementById("header"+no+"").outerHTML="";
- //document.getElementById("entryRowBody"+no+"").outerHTML="";
- //document.getElementById("entryDelete"+no+"").outerHTML="";
- //document.getElementById("entryRowHR"+no+"").outerHTML="";
- //document.getElementById("breakLine"+no+"").outerHTML="";
- //document.getElementById("uploadImage"+no+"").outerHTML="";
- //document.getElementById("file-upload"+no+"").outerHTML="";
- //document.getElementById("label"+no+"").outerHTML="";
+ document.getElementById("Left"+no+"").outerHTML="";
 }
 
 function addTemplate3(){
     var table=document.getElementById("newEntryTable");
-    var row = table.insertRow(-1).outerHTML="<ul id='entryRowHeader"+numRow+"'>"+
+    var row = table.insertRow(-1).outerHTML="<ul id='Right"+numRow+"' class='ulEntry'>"+
     "<span id='header"+numRow+"' class='headerFont' data-text='Insert Title' style='width:75%' contentEditable=true></span>"+
-    "<input id='entryDelete"+numRow+"' type='button' class='delete button buttonManipulate buttonDelete' onclick='delete_entryRowOption1("+numRow+")' style='float:right'>"+
+    "<input id='entryDelete"+numRow+"' type='button' class='delete button buttonManipulate buttonDelete' onclick='delete_entryRowOption3("+numRow+")' style='float:right'>"+
     "<br id='breakLine"+numRow+"'>"+
     "<div id='entryRowBody"+numRow+"' align='right' class='wrapword bodyText option1' contenteditable='true'>Body Text</div>"+
     "<label id='label"+numRow+"'for='file-upload"+numRow+"' class='imageContainerR'>"+
@@ -36,7 +29,7 @@ function addTemplate3(){
 
 function addTemplate2() {
     var table=document.getElementById("newEntryTable");
-    var row = table.insertRow(-1).outerHTML="<ul id='entryRowHeader"+numRow+"'>"+
+    var row = table.insertRow(-1).outerHTML="<ul id='Middle"+numRow+"' class='ulEntry'>"+
     "<span id='header"+numRow+"' class='headerFont' data-text='Insert Title' style='width:75%' contentEditable=true></span>"+
     "<input id='entryDelete"+numRow+"' type='button' class='delete button buttonManipulate buttonDelete' onclick='delete_entryRowOption2("+numRow+")' style='float:right'>"+
     "<div id='entryRowBody"+numRow+"' align='left' class='wrapword bodyText' contenteditable='true' data-text='Body Text'></div><hr id='entryRowHR"+numRow+"' class='style-seven' /></ul>";
@@ -45,7 +38,7 @@ function addTemplate2() {
 
 function addTemplate1(){
     var table=document.getElementById("newEntryTable");
-    var row = table.insertRow(-1).outerHTML="<ul id='entryRowHeader"+numRow+"'>"+
+    var row = table.insertRow(-1).outerHTML="<ul id='Left"+numRow+"' class='ulEntry'>"+
     "<span id='header"+numRow+"' class='headerFont' data-text='Insert Title' style='width:75%' contentEditable=true></span>"+
     "<input id='entryDelete"+numRow+"' type='button' class='delete button buttonManipulate buttonDelete' onclick='delete_entryRowOption1("+numRow+")' style='float:right'>"+
     "<br id='breakLine"+numRow+"'>"+
