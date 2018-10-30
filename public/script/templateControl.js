@@ -187,7 +187,7 @@ function insertPublishedTemplate(){
             imgCounter++;
         }else{
             textDiv.style.width = "570px";
-            header.style.textAlign = "center";
+            textDiv.style.textAlign = "center";
             td2.appendChild(textDiv);
             tr2.appendChild(td2);
             tbody2.appendChild(tr2);
