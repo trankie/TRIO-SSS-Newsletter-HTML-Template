@@ -47,7 +47,8 @@
 }
 
 /*Horizontal line style */
-hr.style-eight, hr.style-seven {
+hr.style-eight, hr.style-seven{
+    /*background-color: black;*/
     height: 5px;
     border: 1;
     box-shadow: inset 9px 9px 9px 9px rgba(21, 33, 44, 0.8);
@@ -57,13 +58,27 @@ hr.style-eight, hr.style-seven {
     -o-border-radius: 5px;
     border-radius: 5px;
     width:95%;
-    margin: auto;
+    margin: 10px;
 }
-hr.style-seven {
+hr.style-seven{
     box-shadow: inset 0px 0px 3px 0px rgba(21, 33, 44, 0.8);
     border: .5px;
 }
+hr.style-nine, hr.style-ten{
+    /*vertical-align: center;
+    display: inline-block;*/
+    background-color: black;
+    border-radius: 10px;
+    width: 95%;
+    height: 3px;
+    border: 1px solid black;
+}
+hr.style-ten{
+    width: 90%;
+    background: rgb(221, 224, 228);
+    border: 1px solid rgba(71, 72, 73, 0.8);
 
+}
 
 /*Controller for buttons*/
 .button {
@@ -119,6 +134,7 @@ hr.style-seven {
     background-position: top;
 }
 .buttonSocial{
+    margin: 0px;
     padding: 0px;
     width: 48px;
     height: 48px;
@@ -128,15 +144,7 @@ hr.style-seven {
     background-color: white;
     margin: 10px;
 }
-.button5{
-    background-image: url("../img/facebook-96.png");
-}
-.button6{
-    background-image: url("../img/website-link-96.png");
-}
-.button7{
-    background-image: url("../img/email-96.png");
-}
+
 .buttonManipulate{
     width: 30px;
     height: 30px;
@@ -285,3 +293,25 @@ ul {
     padding: 0;
     margin: 0;
   }
+
+#publishContainer{
+    display: none; 
+    Margin: 0 auto;
+    max-width: 600px;
+    min-width: 320px; 
+    width: 320px;width:
+    calc(28000% - 167400px); 
+    background-color: white;
+}
+.WillNeverSee{
+    display: none;
+}
+.verticaltop{
+    vertical-align: top;
+}
+.MiddleDivider{
+    border-right:2px solid #000;
+}
+.nonTextDec{
+    text-decoration: none;
+}

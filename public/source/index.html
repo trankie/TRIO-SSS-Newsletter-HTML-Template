@@ -85,12 +85,18 @@
                         <tr id="socialMedia">
                             <td align="center">
                                 <div class="headerFont">Follow Us On Social Media</div>
-                                <a class="center button buttonSocial button5" target="_blank" rel="noopener noreferrer"
-                                    href="https://www.facebook.com/osu.triosss/"></a>
-                                <a class="center button buttonSocial button6" target="_blank" rel="noopener noreferrer"
-                                    href="https://trio-sss.oregonstate.edu/"></a>
-                                <a class="center button buttonSocial button7" target="_blank" rel="noopener noreferrer"
-                                    href="mailto:trio.sss@oregonstate.edu"></a>
+                                <a class="center nonTextDec" visibility="hidden" target="_blank" rel="noopener noreferrer"
+                                    href="https://www.facebook.com/osu.triosss/">
+                                    <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-color-facebook-96.png" class= "button buttonSocial">
+                                </a>
+                                <a class="center nonTextDec" target="_blank" rel="noopener noreferrer"
+                                    href="https://trio-sss.oregonstate.edu/">
+                                    <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-color-link-96.png" class= "button buttonSocial">
+                                </a>
+                                <a class="center nonTextDec" target="_blank" rel="noopener noreferrer"
+                                    href="mailto:trio.sss@oregonstate.edu">
+                                    <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-color-forwardtofriend-96.png" class= "button buttonSocial">
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -124,19 +130,30 @@
             <button class="center button button4" type="button" onclick="addTemplate3()"></button>
         </div>
     </div>
-    <div id='publishContainer' display='none' style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px); background-color: white;">
-        <div class='contentContainer'>
+    <!-- Start of Publishing the template -->
+    <div id='publishContainer'>
+        <div id='divToLatchOn' class='contentContainer'>
             <div id="initHeader" style="width:590px;">Oregon State University: TRIO</div>
             <div style="width:100%;">
                 <img id="mainBanner" src="https://www.midmich.edu/application/files/5615/2882/9564/trio-sss-banner2.jpg">
             </div>
+            <div id="date-input-field-ID" class="date-input-field"></div>
+
         </div>
     </div>
+
+    <div id='FakeHoldingBay' class="WillNeverSee">
+    </div>
+    <table class ="WillNeverSee">
+        <tbody id="FakeTableBay">
+        </tbody>
+    </table>
     <button id='publish_buttonID' type="button" class="button publish_button" onclick="savingCurrentValuesInTemplate()">Publish Page</button>
     <script src="../script/modal.js"></script>
     <script src="../script/content.js"></script>
     <script src="../script/upcomingContent.js"></script>
     <script src="../script/templateControl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>
